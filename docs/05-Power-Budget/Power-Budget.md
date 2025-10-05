@@ -7,6 +7,8 @@ Write a overview of what you did and why you did a Power Budget.
 
 > Capture your power budge as a image to display. Take time to get clean breaks and a well organized layout.
 
+![Markdownfile1](Markdownfile(Pg3).png){style width:"350" height:"300;"}
+
 ![budget1](budgetPg1.png){style width:"350" height:"300;"}
 
 ![budget2](budgetPg2.png){style width:"350" height:"300;"}

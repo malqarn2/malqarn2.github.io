@@ -5,23 +5,26 @@ tags:
 - tag2
 ---
 <center>
-<font size= "6">(Your Name) Datasheet</font><br>
+<font size= "6">Sam Burns Datasheet</font><br>
 as part of<br>
-<font size= "8"> Project Name</font><br>
+<font size= "8"> Individual Assignemnt</font><br>
 for<br>
-<font size= "5"> Team ### </font><br>
+<font size= "5"> Team 205 </font><br>
 
-**Submission: month, DD, YYYY**
+**Submission: September, 03, 2025**
 </center>
 
 ## Introduction
 
-* This needs to be updated so that a reader gets an idea of the purpose of this datasheet.
+* setting up Github and all the other software
 
 ### Project Summary
 
-* This needs to be updated to reflect <ins>your version</ins> of the team project, so when shared not via the team's report, the reader gets an idea of the direction of the project and how your work will contribute to the overall success.
-* Add context that ties into the link to your [team report.](https://embedded-systems-design.github.io/EGR304TeamTemplate/)
+* A list of the edits/tweaks I did to this template:
+
+    * I edited this page
+    * Added Page 3 of the "power budget" again
+    * Added the Power Budget as a .jpg from the .pdf file
 
 
 ### My Contribution

@@ -6,19 +6,21 @@ tags:
 ---
 
 ## Overview
-This needs to be updated with a brief purpose for having the block diagram.
-Things to mention are:
-* power levels
-* sensor
-* Actuator
-* team connections
-* Power source
-* ...
+My section is the Input/Output board, the bridge between our sensors and lights. Its intended to allow for user control and sensor input to determine what state the light should be. 
 
-To get some initial formatting help, one can view ["here"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/) some basic techniques.
+Since my unit is the hub of our other units it has 3 team connetions. The "sensors" of my board are the buttons and the popotentiometer. These allow for fine user control compared to the actual sensor boards. The whole board should opperate on 5v & 1.5 Amps. 
+
+Button 1-3 act like the quick controlls on a CD player:
+
+Button 1: On/Off
+
+Button 2: Mode (White-Warm-Cool)
+
+Button 3: reset
+
+The potentiometer controlls the brightness of the light.
 
 
-## Example Block Diagram 
-Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.
+## Block Diagram 
 
-![Example of Indivial Block diagram ](individual-block-diagram.png)
+![Indivial Block diagram ](individual block diagram.drawio.png)
