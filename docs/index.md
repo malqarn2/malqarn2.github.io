@@ -5,7 +5,7 @@ tags:
 - tag2
 ---
 <center>
-<font size= "6">Jon San VIcente Datasheet</font><br>
+<font size= "6">Jon San Vicente Datasheet</font><br>
 as part of<br>
 <font size= "8"> Project Name</font><br>
 for<br>
