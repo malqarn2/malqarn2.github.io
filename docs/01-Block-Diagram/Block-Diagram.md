@@ -19,4 +19,4 @@ To get some initial formatting help, one can view ["here"](https://embedded-syst
 ## Example Block Diagram 
 Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.
 
-![Example of Indivial Block diagram ]<img width="761" height="761" alt="khalid block diagram drawio" src="https://github.com/user-attachments/assets/3fc8fa50-58b0-4162-aa20-7ac8e769e243" />
+![Example of Indivial Block diagram ](https://github.com/khamdan24/khamdan24.github.io/blob/main/docs/01-Block-Diagram/khalid%20block%20diagram.drawio.png)
