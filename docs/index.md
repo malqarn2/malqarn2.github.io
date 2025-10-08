@@ -26,6 +26,8 @@ for<br>
 
 ### Manny's Contribution
 
+* This is a link to my [Individual Block Diagram](https://mcastr11-collab.github.io/EGR304MannyIndividualDataSheet/01-Block-Diagram/Block-Diagram/) where an overview of all used components for the project will be shown in blocks, detailing power requirements, pin connections, and the components used.
+
 * This needs to be updated to reflect a team introduction
 * Content should also help an unfamiliar reader navigate to areas of interest. Information like:
 
