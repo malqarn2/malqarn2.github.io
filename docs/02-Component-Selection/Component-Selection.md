@@ -20,7 +20,7 @@ title: Component Selection – H-Bridge Drivers
 ### 1) Texas Instruments **DRV8876** – 40 V, 3.5 A H-bridge motor driver
 ![DRV8876](![DRV8876](https://github.com/user-attachments/assets/2f419168-7e57-4b78-8128-f470fe54ee96)
 )
-- **Unit cost:** \$X.XX (update from Digi-Key)
+- **Unit cost:** \$1.90
 - **Link to product:** [Digi-Key highlight page](https://www.digikey.com/en/product-highlight/t/texas-instruments/drv8876-h-bridge-motor-driver)  
   [Digi-Key part page (DRV8876PWPR)](https://www.digikey.com/en/products/detail/texas-instruments/DRV8876PWPR/10270191)
 - **Key specs:**
@@ -39,7 +39,7 @@ title: Component Selection – H-Bridge Drivers
 
 ### 2) Texas Instruments **DRV8251 / DRV8251A** – 48–50 V, 4.1 A H-bridge motor driver
 ![DRV8251](./assets/ctx936tr_nd_oscillator.png)
-- **Unit cost:** \$X.XX (update from Digi-Key)
+- **Unit cost:** \$2.09 
 - **Link to product:** [Digi-Key highlight page](https://www.digikey.com/en/product-highlight/t/texas-instruments/drv8251-a-48v-h-bridge-motor-drivers)
 - **Key specs:**
   - Operating VSUP: **4.5–48 V** (family up to 50 V per TI datasheet)
