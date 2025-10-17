@@ -37,7 +37,7 @@ title: Component Selection – H-Bridge Drivers
 ---
 
 ### 2) Texas Instruments **DRV8251 / DRV8251A** – 48–50 V, 4.1 A H-bridge motor driver
-![DRV8251](./assets/ctx936tr_nd_oscillator.png)
+![drv8251a](https://github.com/user-attachments/assets/db764036-ac0b-4b8f-a23a-61fc97e00ff9)
 - **Unit cost:** \$2.09 
 - **Link to product:** [Digi-Key highlight page](https://www.digikey.com/en/product-highlight/t/texas-instruments/drv8251-a-48v-h-bridge-motor-drivers)
 - **Key specs:**
