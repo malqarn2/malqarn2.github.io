@@ -26,7 +26,7 @@
 
     
       
-        <title>Component Selection Example - EGR 304 Data Sheet Template</title>
+        <title>Component Selection – H-Bridge Drivers - EGR 304 Data Sheet Template</title>
       
     
     
@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#examples" class="md-skip">
+        <a href="#h-bridge-motor-driver-subsystem" class="md-skip">
           Skip to content
         </a>
       
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Component Selection Example
+              Component Selection – H-Bridge Drivers
             
           </span>
         </div>
@@ -512,12 +512,14 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
   <span class="md-ellipsis">
-    Component Selection Example
+    Component Selection – H-Bridge Drivers
   </span>
   
 
@@ -528,7 +530,7 @@
         
   
   <span class="md-ellipsis">
-    Component Selection Example
+    Component Selection – H-Bridge Drivers
   </span>
   
 
@@ -540,6 +542,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -548,28 +552,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#requirements" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
+      Requirements
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Examples">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Options
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Options">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#style-1" class="md-nav__link">
+  <a href="#1-texas-instruments-drv8876-40-v-35-a-h-bridge-motor-driver" class="md-nav__link">
     <span class="md-ellipsis">
-      Style 1
+      1) Texas Instruments DRV8876 – 40 V, 3.5 A H-bridge motor driver
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#style-2" class="md-nav__link">
+  <a href="#2-texas-instruments-drv8251-drv8251a-4850-v-41-a-h-bridge-motor-driver" class="md-nav__link">
     <span class="md-ellipsis">
-      Style 2
+      2) Texas Instruments DRV8251 / DRV8251A – 48–50 V, 4.1 A H-bridge motor driver
     </span>
   </a>
   
@@ -577,6 +590,24 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choice
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rationale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rationale
+    </span>
+  </a>
   
 </li>
       
@@ -807,6 +838,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -815,28 +848,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#requirements" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
+      Requirements
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Examples">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Options
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Options">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#style-1" class="md-nav__link">
+  <a href="#1-texas-instruments-drv8876-40-v-35-a-h-bridge-motor-driver" class="md-nav__link">
     <span class="md-ellipsis">
-      Style 1
+      1) Texas Instruments DRV8876 – 40 V, 3.5 A H-bridge motor driver
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#style-2" class="md-nav__link">
+  <a href="#2-texas-instruments-drv8251-drv8251a-4850-v-41-a-h-bridge-motor-driver" class="md-nav__link">
     <span class="md-ellipsis">
-      Style 2
+      2) Texas Instruments DRV8251 / DRV8251A – 48–50 V, 4.1 A H-bridge motor driver
     </span>
   </a>
   
@@ -844,6 +886,24 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choice
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rationale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rationale
+    </span>
+  </a>
   
 </li>
       
@@ -870,51 +930,30 @@
   
 
 
-  <h1>Component Selection Example</h1>
-
-<h2 id="examples">Examples</h2>
-<h3 id="style-1">Style 1</h3>
+<h1 id="h-bridge-motor-driver-subsystem">H-Bridge Motor Driver Subsystem</h1>
 <blockquote>
-<p>This is the example found in the assignment, uses more html</p>
+<p>Provide a bidirectional driver for a brushed DC motor with integrated protection and simple MCU control.</p>
 </blockquote>
-<p><em>Table 1: Example component selection</em></p>
-<p><strong>External Clock Module</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>Solution</strong></th>
-<th><strong>Pros</strong></th>
-<th><strong>Cons</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image1.png" data-desc-position="bottom"><img alt="" src="../image1.png"></a><br>Option 1.<br> XC1259TR-ND surface mount crystal<br>$1/each<br><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></td>
-<td>* Inexpensive[^1]<br>* Compatible with PSoC<br>* Meets surface mount constraint of project</td>
-<td>* Requires external components and support circuitry for interface<br>* Needs special PCB layout.</td>
-</tr>
-<tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image3.png" data-desc-position="bottom"><img alt="" src="../image3.png"></a><br>* Option 2. <br>* CTX936TR-ND surface mount oscillator <br>* $1/each <br>* <a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></td>
-<td>* Outputs a square wave <br>* Stable over operating temperature <br> * Direct interface with PSoC (no external circuitry required) range</td>
-<td>* More expensive <br>* Slow shipping speed</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Choice:</strong> Option 2: CTX936TR-ND surface mount oscillator</p>
-<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
-<h3 id="style-2">Style 2</h3>
-<blockquote>
-<p>Also acceptable, more markdown friendly</p>
-</blockquote>
-<p><strong>External Clock Module</strong></p>
-<ol>
-<li>
-<p>XC1259TR-ND surface mount crystal</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image1.png" data-desc-position="bottom"><img alt="" src="../image1.png"></a></p>
+<h2 id="requirements">Requirements</h2>
 <ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></li>
+<li>Motor supply: 4.5–48 V acceptable, target ~12–24 V</li>
+<li>Peak motor current: ≥ 3 A</li>
+<li>Built-in protections (OCP/OTP/UVLO)</li>
+<li>Simple MCU control (PH/EN or IN/IN PWM)</li>
+<li>Small SMT package preferred</li>
 </ul>
+<hr>
+<h2 id="options">Options</h2>
+<h3 id="1-texas-instruments-drv8876-40-v-35-a-h-bridge-motor-driver">1) Texas Instruments <strong>DRV8876</strong> – 40 V, 3.5 A H-bridge motor driver</h3>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="./assets/xc1259tr_nd_crystal.png" data-desc-position="bottom"><img alt="DRV8876" src="./assets/xc1259tr_nd_crystal.png"></a>
+- <strong>Unit cost:</strong> $X.XX (update from Digi-Key)
+- <strong>Link to product:</strong> <a href="https://www.digikey.com/en/product-highlight/t/texas-instruments/drv8876-h-bridge-motor-driver">Digi-Key highlight page</a><br>
+<a href="https://www.digikey.com/en/products/detail/texas-instruments/DRV8876PWPR/10270191">Digi-Key part page (DRV8876PWPR)</a>
+- <strong>Key specs:</strong>
+  - Operating VSUP: <strong>4.5–37 V</strong>
+  - Peak output current: <strong>up to ~3.5 A</strong>
+  - Integrated current sensing/regulation, proportional current output (IPROPI)
+  - Protections: overcurrent, thermal, undervoltage</p>
 <table>
 <thead>
 <tr>
@@ -924,27 +963,29 @@
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
+<td>Wide supply range for many motors</td>
+<td>16-pin HTSSOP package is larger than 8-pin options</td>
 </tr>
 <tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
+<td>Built-in current sense/regulation reduces external parts</td>
+<td>~3.5 A peak: check thermal/electrical headroom for your load</td>
 </tr>
 <tr>
-<td>Meets surface mount constraint of project</td>
-<td></td>
+<td>Multiple input modes (PH/EN, IN/IN, half-bridge)</td>
+<td>Layout care still needed for heat/current paths</td>
 </tr>
 </tbody>
 </table>
-</li>
-<li>
-<p>CTX936TR-ND surface mount oscillator</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image3.png" data-desc-position="bottom"><img alt="" src="../image3.png"></a></p>
-<ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></li>
-</ul>
+<hr>
+<h3 id="2-texas-instruments-drv8251-drv8251a-4850-v-41-a-h-bridge-motor-driver">2) Texas Instruments <strong>DRV8251 / DRV8251A</strong> – 48–50 V, 4.1 A H-bridge motor driver</h3>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="./assets/ctx936tr_nd_oscillator.png" data-desc-position="bottom"><img alt="DRV8251" src="./assets/ctx936tr_nd_oscillator.png"></a>
+- <strong>Unit cost:</strong> $X.XX (update from Digi-Key)
+- <strong>Link to product:</strong> <a href="https://www.digikey.com/en/product-highlight/t/texas-instruments/drv8251-a-48v-h-bridge-motor-drivers">Digi-Key highlight page</a>
+- <strong>Key specs:</strong>
+  - Operating VSUP: <strong>4.5–48 V</strong> (family up to 50 V per TI datasheet)
+  - Peak output current: <strong>~4.1 A</strong>
+  - Charge pump for N-MOS H-bridge, <strong>current regulation</strong>; <strong>A-variant</strong> adds current-sense feedback
+  - Protections: overcurrent, thermal; low-power sleep</p>
 <table>
 <thead>
 <tr>
@@ -954,23 +995,25 @@
 </thead>
 <tbody>
 <tr>
-<td>Outputs a square wave</td>
-<td>More expensive</td>
+<td>Higher voltage headroom (good for 24–48 V systems)</td>
+<td>Slightly more complex configuration (IPROPI/ISEN, current regulation)</td>
 </tr>
 <tr>
-<td>Stable over operating temperature</td>
-<td>Slow shipping speed</td>
+<td>Strong protection features and stall/load feedback</td>
+<td>Cost may be higher vs simpler drivers</td>
 </tr>
 <tr>
-<td>Direct interface with PSoC (no external circuitry required) range</td>
-<td></td>
+<td>8-pin option available in the family for compact designs</td>
+<td>Careful layout/thermal vias recommended for higher currents</td>
 </tr>
 </tbody>
 </table>
-</li>
-</ol>
-<p><strong>Choice:</strong> Option 2: CTX936TR-ND surface mount oscillator</p>
-<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
+<hr>
+<h2 id="choice">Choice</h2>
+<p><strong>DRV8251A</strong> (if your system voltage is ≥ 24 V or you want current-sense feedback)<br>
+<strong>DRV8876</strong> (if your system is ≤ 24–36 V and you want a proven, flexible driver with integrated current regulation)</p>
+<h2 id="rationale">Rationale</h2>
+<p>Both devices meet the bidirectional control requirement and integrate protections. <strong>DRV8251A</strong> offers higher voltage capability and built-in current feedback for diagnostics/stall detection, making it better for <strong>24–48 V</strong> systems. <strong>DRV8876</strong> is ideal for <strong>4.5–37 V</strong> designs where an integrated current regulation loop and flexible control modes simplify firmware and reduce external parts.</p>
 
 
 
