@@ -18,8 +18,7 @@ title: Component Selection – H-Bridge Drivers
 ## Options
 
 ### 1) Texas Instruments **DRV8876** – 40 V, 3.5 A H-bridge motor driver
-![DRV8876](<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/d799f996-9aaf-4787-9717-c21b7f43603b" />
-)
+![DRV8876](https://github.com/user-attachments/assets/534e7087-906c-4fa4-8350-f72e36989ddd)
 - **Unit cost:** \$1.90
 - **Link to product:** [Digi-Key highlight page](https://www.digikey.com/en/product-highlight/t/texas-instruments/drv8876-h-bridge-motor-driver)  
   [Digi-Key part page (DRV8876PWPR)](https://www.digikey.com/en/products/detail/texas-instruments/DRV8876PWPR/10270191)
