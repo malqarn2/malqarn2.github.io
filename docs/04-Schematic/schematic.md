@@ -21,4 +21,4 @@ LED Indicator: The LED (D1) with resistor (R1) provides a basic power or status 
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*][subsystem schematic PDF.pdf](https://github.com/user-attachments/files/23012193/subsystem.schematic.PDF.pdf), and the Zip folder of the project [*here*](dummyZip.zip).
+The schematic as a PDF download is available [*here*][subsystem schematic PDF.pdf](https://github.com/user-attachments/files/23012193/subsystem.schematic.PDF.pdf), and the Zip folder of the project [*here*][schematic.Zip.zip](https://github.com/user-attachments/files/23012312/schematic.Zip.zip).
