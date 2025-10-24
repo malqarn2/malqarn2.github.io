@@ -29,4 +29,4 @@ All components share a common ground reference to maintain stable and reliable o
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*][subsystem schematic PDF.pdf](https://github.com/user-attachments/files/23130336/subsystem.schematic.PDF.pdf), and the Zip folder of the project [*here*][schematic.Zip.zip](https://github.com/user-attachments/files/23012312/schematic.Zip.zip).
+The schematic as a PDF download is available [*here*][subsystem schematic PDF.pdf](https://github.com/user-attachments/files/23130336/subsystem.schematic.PDF.pdf), and the Zip folder of the project [*here*][schematic.Zip.zip](https://github.com/user-attachments/files/23130358/schematic.Zip.zip).
