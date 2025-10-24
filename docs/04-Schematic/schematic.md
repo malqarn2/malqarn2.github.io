@@ -16,9 +16,9 @@ Op-Amp (LM324): Used to buffer or amplify an analog signal before sending it to 
 LED Indicator: The LED (D1) with resistor (R1) provides a basic power or status indication.
 
 <img width="1473" height="889" alt="Image" src="https://github.com/user-attachments/assets/843fa8ec-86bd-4ca6-b4f6-edf929575043" />
-**Figure ##:** Showing a example schematic.
+**Figure 1:** Showing a schematic.
 
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*][subsystem schematic PDF.pdf](https://github.com/user-attachments/files/23012193/subsystem.schematic.PDF.pdf), and the Zip folder of the project [*here*](dummyZip.zip).
+The schematic as a PDF download is available [*here*][subsystem schematic PDF.pdf](https://github.com/user-attachments/files/23012193/subsystem.schematic.PDF.pdf), and the Zip folder of the project [*here*][schematic.Zip.zip](https://github.com/user-attachments/files/23012312/schematic.Zip.zip).
