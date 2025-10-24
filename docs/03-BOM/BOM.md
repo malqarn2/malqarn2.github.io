@@ -1,9 +1,6 @@
 ---
 title: Bill of Materials
-tags:
-- tag1
-- tag2
----
+
 
 ## Overview
 This circuit provides power and signal connections for a Curiosity Nano microcontroller board.
@@ -18,6 +15,5 @@ The Bill of Materials (BOM) lists standard, easily available components from Dig
 
 ## Bill of Materials Example (as Image)
 <img width="1787" height="187" alt="Image" src="https://github.com/user-attachments/assets/46c8ce80-dbf6-4008-befb-750190338783" />.{style width: "2000"}
-**Figure 2:** Example Bill of Materials as a screenshot.
+**Figure 1:** Bill of Materials as a screenshot.
 
-As you can see, the text can be difficult to read without opening the image.
