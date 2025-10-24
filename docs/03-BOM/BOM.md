@@ -6,20 +6,15 @@ tags:
 ---
 
 ## Overview
-written context
+This circuit provides power and signal connections for a Curiosity Nano microcontroller board.
+It includes a 5 V regulator (LM7805) to power the board and components, and an op-amp (LM324) to buffer a sensor input before it reaches the Nano’s analog input.
 
-## Bill of Materials Example (as Table)
+The schematic also includes resistors and capacitors for signal conditioning and voltage regulation, and a 2×4 connector (J2) for external I/O connections.
+A photoresistor (LDR) is used as the analog sensor, and all parts share a common ground reference.
 
-*Table ##: An example of one approach to adding your BOM table to this section.*
+The Bill of Materials (BOM) lists standard, easily available components from Digi-Key, making the design practical and low-cost for prototyping or small-scale builds.
 
-| **Part Name/Description** | **Qty** | **Unit Cost** | **Total Cost** | **Manufacture** | **Manufacturer #** | **Vendor Link** |**Datasheet Link** | **Schematic Reference Designators** |
-|:--------------------|:----|:---------------|:-----|:--------|:-----|:-----|:----|:-----|
-8-bit SIPO/SISO Shift Register, SOIC-16 package | 1 | $0.49 | $ 0.49 | NXP | 74HC595D,112 | [DigiKey](https://www.digikey.com/en/products/detail/nexperia-usa-inc/74HC595D-112/763550) | [datasheet link](https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf) | U1 |
-0.1 µF Ceramic Capacitor, +/-10%, X7R, 50V, 0805 package |10 | 0.2750 | $2.75 | KEMET | C0805F104K5RACTU | PRLTA 109 |n/a | C2, C4, C6, C7, C8, C9, C10, C11, C12, C16
 
-Note: Setting it up as a table is nice because it is completely viewable without scaling issues. <ins>Downside</ins> is that you have to do the math.
-
-* You could also import your BOM via a screenshot of the spreadsheet created BOM
 
 ## Bill of Materials Example (as Image)
 ![](BOM-Screenshot.png){style width: "2000"}
