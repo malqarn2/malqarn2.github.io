@@ -4,17 +4,24 @@ title: Schematic
 
 ## Overview
 
-This schematic provides power and signal connections for a Curiosity Nano microcontroller board.
-It includes a 5 V regulator, an op-amp circuit for analog signal buffering, and an LED indicator.
+Overview
 
-Power: A 9 V input (J1) is regulated to 5 V using the LM7805. The 5 V output powers the Curiosity Nano and other components.
+This schematic provides power and signal connections for a Curiosity Nano microcontroller board. It includes a 5 V regulator, an op-amp for buffering a sensor signal, and a connector for inputs and outputs.
 
-Controller: The Curiosity Nano handles input and output signals through connector J2.
+Power:
+A 9 V input is regulated to 5 V by the LM7805. The 5 V output powers the Curiosity Nano, the op-amp, and other components.
 
-Op-Amp (LM324): Used to buffer or amplify an analog signal before sending it to the Nano’s analog input.
+Op-Amp (LM324):
+Used as a voltage buffer to condition the sensor signal before it goes to the Nano’s analog input.
 
-LED Indicator: The LED (D1) with resistor (R1) provides a basic power or status indication.
+Controller:
+The Curiosity Nano reads the buffered signal and handles digital I/O through connector J2.
 
+Connector (J2):
+Provides access to the Nano’s pins for external sensors or modules.
+
+Ground:
+All parts share a common ground for stable operation.
 <img width="1645" height="860" alt="Image" src="https://github.com/user-attachments/assets/d8b2e5fa-f48f-4d26-aa45-2045cf217195" />
 **Figure 1:** Showing a schematic.
 
