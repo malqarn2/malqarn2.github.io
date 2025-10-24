@@ -15,7 +15,7 @@ Op-Amp (LM324): Used to buffer or amplify an analog signal before sending it to 
 
 LED Indicator: The LED (D1) with resistor (R1) provides a basic power or status indication.
 
-<img width="1473" height="889" alt="Image" src="https://github.com/user-attachments/assets/843fa8ec-86bd-4ca6-b4f6-edf929575043" />
+<img width="1645" height="860" alt="Image" src="https://github.com/user-attachments/assets/d8b2e5fa-f48f-4d26-aa45-2045cf217195" />
 **Figure 1:** Showing a schematic.
 
 
