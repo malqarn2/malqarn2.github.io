@@ -23,7 +23,7 @@ An 8-pin header provides access to the Nano’s I/O pins for additional sensors,
 Ground:
 All components share a common ground reference to maintain stable and reliable operation throughout the circuit.
 
-<img width="1645" height="860" alt="Image" src="https://github.com/user-attachments/assets/d8b2e5fa-f48f-4d26-aa45-2045cf217195" />
+<img width="1693" height="841" alt="Image" src="https://github.com/user-attachments/assets/47caf89e-96b8-4c7f-8cf8-f52e240aa8c2" />
 **Figure 1:** Showing a schematic.
 
 
