@@ -1,12 +1,11 @@
 ---
 title: Individal Block Diagram
-tags:
-- tag1
-- tag2
 ---
 
 ## Overview
-This block diagram shows how the AutoCan system works. It includes the main parts used for sensing, control, and movement. A 9 V DC power supply provides energy to the motor driver and also to a 5 V regulator that powers the sensors and the microcontroller. The light sensor detects brightness and sends an analog signal to the PIC18F57Q43 microcontroller. Two buttons provide user input. The microcontroller processes these signals and controls both the DC motor and a red LED using digital and PWM outputs. The motor driver (L293D) receives signals from the microcontroller to run the motor forward or backward. All parts are connected through digital and analog lines, allowing smooth communication between the sensors, controller, and actuators.
+This block diagram shows how the AutoCan system controls the motion of the trash can lid using a DC motor. It includes the main components for power regulation, control, and actuation. A 9 V DC power supply provides energy to the motor driver and a 5 V regulator, which powers the microcontroller and supporting circuits.
+
+The microcontroller (PIC18F57Q43 Curiosity Nano) reads input signals from the user via buttons and processes control logic to operate the motor. It sends control signals through digital I/O and PWM outputs to the motor driver (L293D), which drives the DC motor to open or close the lid.
 
 To get some initial formatting help, one can view ["here"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/) some basic techniques.
 
@@ -14,4 +13,4 @@ To get some initial formatting help, one can view ["here"](https://embedded-syst
 ## Example Block Diagram 
 Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.
 
-![](individual-block-diagram.png)
+<img width="977" height="599" alt="Image" src="https://github.com/user-attachments/assets/d4c3f72a-98c1-4f66-963a-23ecb9912c6a" />
