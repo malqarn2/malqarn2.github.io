@@ -14,4 +14,4 @@ To get some initial formatting help, one can view ["here"](https://embedded-syst
 ##  Block Diagram 
 
 
-<img width="780" height="614" alt="Image" src="https://github.com/user-attachments/assets/01906365-dbb8-49b3-9f03-b8f7200b1adb" />
+<img width="712" height="550" alt="Image" src="https://github.com/user-attachments/assets/02ec911f-3322-4cd0-b4cb-be9a0064e780" />
