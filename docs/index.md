@@ -26,8 +26,7 @@ for<br>
 
 ### My Contribution
 
-* This needs to be updated to reflect a team introduction
-* Content should also help an unfamiliar reader navigate to areas of interest. Information like:
+My specific contribution focused on the DC Motor Control System, which manages the automatic lid mechanism. I designed and implemented the motor control circuit responsible for opening and closing the lid when triggered by the sensor. The system uses a DC motor driven by a motor driver and microcontroller, allowing precise movement and timing. I also ensured the motor operated smoothly and safely by integrating limit switches and power control logic to prevent over-rotation or mechanical strain.
 
 To review the details listed of the material used to construct the subsection, you can review it in the ["BOM"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/03-BOM/BOM/) section of the datasheet.
 
