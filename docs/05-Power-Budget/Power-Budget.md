@@ -3,20 +3,22 @@ title: Power Budget
 ---
 
 ## Overview
-Write a overview of what you did and why you did a Power Budget.
+In this section, I created a Power Budget to calculate and analyze the total current and power requirements of the AutoCan system. The goal was to ensure that every component in the circuit including the Curiosity Nano microcontroller, op-amp, voltage regulator, H-Bridge, and DC motor operates safely within the available power supply limits.
 
-> Capture your power budge as a image to display. Take time to get clean breaks and a well organized layout.
+By estimating the current draw of each device and grouping them by voltage rail (9 V and 5 V), I was able to confirm that the selected 9 V power adapter and 5 V regulator can provide sufficient current with an appropriate safety margin. Creating this Power Budget helps prevent power shortages, overheating, and unstable operation in the final circuit design.
 
-![budget1](budgetPg1.png){style width:"350" height:"300;"}
 
-![budget2](budgetPg2.png){style width:"350" height:"300;"}
 
-![budget3](budgetPg3.png){style width:"350" height:"300;"}
+<img width="927" height="350" alt="Image" src="https://github.com/user-attachments/assets/7d0cce77-f12c-4561-802b-c8b6ae4603e4" />{style width:"350" height:"300;"}
+
+<img width="926" height="325" alt="Image" src="https://github.com/user-attachments/assets/9eb86f18-5115-4a21-8cd6-31e86323e0da" />{style width:"350" height:"300;"}
+
+<img width="942" height="359" alt="Image" src="https://github.com/user-attachments/assets/fba33876-7a4b-4272-aa31-c2f0859e8fbf" />{style width:"350" height:"300;"}
 
 ## Conclusions
 
-From the prepare Power Budget, .....
+From the prepared Power Budget, it was confirmed that the AutoCan circuit can safely operate within the limits of the selected 9 V power adapter and 5 V voltage regulator. The total current drawn by all components, including the Curiosity Nano, LM324 op-amp, H-Bridge, and DC motor, remains below the available supply capacity with an added 25% safety margin. This ensures stable operation, prevents voltage drops, and avoids overloading the power supply. Overall, the Power Budget validates that the design is electrically reliable and suitable for the AutoCan system’s requirements.
 
 ## Resouces
 
-The power budget as a PDF download is available [*here*](PowerBudgetExample.pdf), and a Microsoft Excel Sheet [*here*](PowerBudgetExample.xlsx).
+The power budget as a PDF download is available [*here*][Power Budget.pdf](https://github.com/user-attachments/files/23202884/Power.Budget.pdf), and a Microsoft Excel Sheet [*here*][Power_Budget_Mo.xlsx](https://github.com/user-attachments/files/23202891/Power_Budget_Mo.xlsx).
