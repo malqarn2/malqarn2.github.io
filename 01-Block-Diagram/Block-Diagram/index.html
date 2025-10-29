@@ -843,12 +843,13 @@
   <h1>Individal Block Diagram</h1>
 
 <h2 id="overview">Overview</h2>
-<p>This block diagram shows how the AutoCan system controls the motion of the trash can lid using a DC motor. It includes the main components for power regulation, control, and actuation. A 9 V DC power supply provides energy to the motor driver and a 5 V regulator, which powers the microcontroller and supporting circuits.</p>
-<p>The microcontroller (PIC18F57Q43 Curiosity Nano) reads input signals from the user via buttons and processes control logic to operate the motor. It sends control signals through digital I/O and PWM outputs to the motor driver (L293D), which drives the DC motor to open or close the lid.</p>
-<p>To get some initial formatting help, one can view <a href="https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/">"here"</a> some basic techniques.</p>
+<p>This block diagram illustrates how the AutoCan motor control system operates using a Microchip PIC18F57Q43 Curiosity Nano board. The system controls a 6V N20 DC motor through a custom-built H-Bridge (Q1–Q4) made of PMOS and NMOS transistors, enabling bidirectional motor rotation.</p>
+<p>An op-amp (MCP6004) is used to buffer and condition the analog signal from the motor feedback before it is read by the microcontroller’s ADC input. The Curiosity Nano processes these analog readings and generates PWM control signals through its DAC and digital I/O pins to drive the H-Bridge.</p>
+<p>The J2 connector provides external access to the system’s digital, analog, and ground pins for motor control and sensor interfacing. Overall, the design integrates signal processing, control, and actuation into a compact and efficient embedded motor control solution.
+To get some initial formatting help, one can view <a href="https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/">"here"</a> some basic techniques.</p>
 <h2 id="example-block-diagram">Example Block Diagram</h2>
 <p>Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://github.com/user-attachments/assets/d4c3f72a-98c1-4f66-963a-23ecb9912c6a" data-desc-position="bottom"><img width="977" height="599" alt="Image" src="https://github.com/user-attachments/assets/d4c3f72a-98c1-4f66-963a-23ecb9912c6a"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://github.com/user-attachments/assets/01906365-dbb8-49b3-9f03-b8f7200b1adb" data-desc-position="bottom"><img width="780" height="614" alt="Image" src="https://github.com/user-attachments/assets/01906365-dbb8-49b3-9f03-b8f7200b1adb"></a></p>
 
 
 
