@@ -11,7 +11,7 @@ The J2 connector provides external access to the system’s digital, analog, and
 To get some initial formatting help, one can view ["here"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/) some basic techniques.
 
 
-## Example Block Diagram 
-Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.
+##  Block Diagram 
+
 
 <img width="780" height="614" alt="Image" src="https://github.com/user-attachments/assets/01906365-dbb8-49b3-9f03-b8f7200b1adb" />
