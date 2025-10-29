@@ -38,4 +38,4 @@ All components share a common ground to ensure stable and reliable operation.
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*][subsystem schematic.PDF](https://github.com/user-attachments/files/23146191/subsystem.schematic.PDF), and the Zip folder of the project [*here*][schematic.Zip.zip](https://github.com/user-attachments/files/23146224/schematic.Zip.zip).
+The schematic as a PDF download is available [*here*][Schematic PDF.pdf](https://github.com/user-attachments/files/23200744/Schematic.PDF.pdf), and the Zip folder of the project [*here*][schematic.Zip.zip](https://github.com/user-attachments/files/23200748/schematic.Zip.zip).
