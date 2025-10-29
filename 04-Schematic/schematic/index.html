@@ -844,17 +844,19 @@
 
 <h2 id="overview">Overview</h2>
 <p>Overview</p>
-<p>This schematic provides regulated power and signal connections for a Curiosity Nano microcontroller board. It includes a 5 V voltage regulator, an op-amp circuit for analog signal buffering, and a connector for external inputs and outputs.</p>
-<p>Power:
-A 9 V input is regulated to 5 V using the LM7805 voltage regulator. The regulated 5 V output supplies power to the Curiosity Nano board, the LM324 op-amp, and other circuit components.</p>
-<p>Op-Amp (LM324):
-The LM324 is configured as a voltage follower to buffer and stabilize the analog signal from a sensor before it is read by the Nano’s analog input pin.</p>
-<p>Controller (Curiosity Nano):
-The Curiosity Nano microcontroller processes the buffered analog signal and manages input/output operations through connector J2.</p>
-<p>Connector (J2):
-An 8-pin header provides access to the Nano’s I/O pins for additional sensors, modules, or external connections.</p>
-<p>Ground:
-All components share a common ground reference to maintain stable and reliable operation throughout the circuit.</p>
+<p>This schematic powers and controls a Curiosity Nano microcontroller board with a DC motor. It includes a 9 V to 5 V power regulator, an op-amp for analog signal buffering, and a discrete H-Bridge for motor control.</p>
+<p>Power Supply</p>
+<p>A 9 V input is regulated to 5 V using an LM7805. The 5 V output powers the Curiosity Nano, the LM324 op-amp, and other components. Capacitors help smooth voltage and reduce noise.</p>
+<p>Op-Amp (LM324)</p>
+<p>The LM324 buffers and stabilizes analog signals from sensors before they are read by the Curiosity Nano’s analog input.</p>
+<p>Motor Driver (H-Bridge)</p>
+<p>A discrete H-Bridge made from PMOS and NMOS transistors drives the DC motor in both directions. The Curiosity Nano provides the control signals.</p>
+<p>Controller (Curiosity Nano)</p>
+<p>The Curiosity Nano reads sensor signals, sends control signals to the H-Bridge, and manages overall system operation.</p>
+<p>Connector (J2)</p>
+<p>An 8-pin header provides access to the Curiosity Nano’s I/O pins for connecting sensors, modules, or external devices.</p>
+<p>Ground</p>
+<p>All components share a common ground to ensure stable and reliable operation.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://github.com/user-attachments/assets/83a5c6d2-9d32-486c-bdbe-2abc8e117684" data-desc-position="bottom"><img width="1181" height="817" alt="Image" src="https://github.com/user-attachments/assets/83a5c6d2-9d32-486c-bdbe-2abc8e117684"></a>
 <strong>Figure 1:</strong> Showing a schematic.</p>
 <h2 id="resouces">Resouces</h2>
