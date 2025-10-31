@@ -1,5 +1,5 @@
 # title
-Component Selection — DC Motor
+Component Selection – DC Motor
 
 # DC Motor Subsystem
 
@@ -8,96 +8,82 @@ Provide the mechanical output source for the AutoCan system by selecting a brush
 ---
 
 ## Requirements
-
-- **Operating voltage:** 6 – 9 V (nominal system = 9 V)
-- **Continuous current:** ≤ 0.6 A (for L293D) or ≤ 3 A (for DRV8876)
-- **Peak current:** ≤ 1 A (L293D) or ≤ 4 A (DRV8251/DRV8876)
+- **Operating voltage:** 6 – 12 V (nominal 12 V)
+- **Continuous current:** ≤ 3 A (DRV8876 class driver)
+- **Peak current:** ≤ 4 A (DRV8251/DRV8876)
 - **Direction control:** bidirectional (H-bridge)
-- **Form factor:** geared output shaft suitable for wheel coupling
-- **Torque and speed:** sufficient to move lightweight chassis at 0.2 – 0.5 m/s
-- **Mounting:** standard N20 or 37D form factor preferred
+- **Torque and speed:** sufficient to open a ~2 lb trash-lid (~400 oz-in torque, 10–30 rpm)
+- **Mounting:** geared output shaft or worm-gear drive recommended
 
 ---
 
 ## Options
 
-### 1) **Pololu 6 V N20 Metal Gearmotor – 200 RPM**
-![Image](https://github.com/user-attachments/assets/38d7421e-bded-48c6-aa15-32e4b55f6008)
+### 1) **DFRobot FIT0492-A Micro DC Gearmotor – 12 V, 50 RPM**
+![Image](https://github.com/user-attachments/assets/1115248f-c77d-4318-84ff-1bb2fac5dd24)
 
-**Link:** [Digi-Key Product Page](https://www.digikey.com/en/products/detail/pololu/1093/7398781)
-
-| Spec | Value |
-|------|-------|
-| Rated Voltage | 6 V DC |
-| No-Load Speed | ~200 RPM |
-| Stall Current | ~0.36 A |
-| Stall Torque | ~0.03 N·m |
-| Shaft | 3 mm D-shaft |
-| Body Size | 12 × 10 × 26 mm |
-| Gear Ratio | 30 : 1 |
-| Unit Cost | ≈ $8.95 |
-
-**Pros**
-- Compact and light — ideal for small mobile robots  
-- Compatible with **L293D** current limit (< 600 mA typical)  
-- Many gear ratios available for tuning torque/speed  
-- Works well on 5 – 9 V with PWM control  
-
-**Cons**
-- Limited torque for heavier robots  
-- Shaft diameter small (needs hub adapter)  
-- May heat up under stall conditions  
-
----
-
-### 2) **Pololu 12 V 37D Metal Gearmotor – 100 RPM**
-![Image](https://github.com/user-attachments/assets/929337e2-214e-4181-be0c-331c29a8daed)
-
-**Link:** [Digi-Key Product Page](https://www.digikey.com/en/products/detail/pololu/1103/7398787)
+**Link:** [Digi-Key Product Page](https://www.digikey.com/en/products/detail/dfrobot/FIT0492-A/7087165)
 
 | Spec | Value |
 |------|-------|
 | Rated Voltage | 12 V DC |
-| No-Load Speed | ~100 RPM |
-| Stall Current | ~3.5 A |
-| Stall Torque | ~1.1 N·m |
-| Shaft | 6 mm D-shaft |
-| Body Size | Ø 37 mm × 63 mm |
+| No-Load Speed | ~50 RPM |
+| Rated Torque | ~9 kg·cm (≈ 125 oz-in ≈ 0.88 N·m) |
+| Stall Torque | ~50 kg·cm (≈ 695 oz-in ≈ 4.8 N·m) |
 | Gear Ratio | 100 : 1 |
-| Unit Cost | ≈ $24.95 |
+| Shaft | 6 mm D-shaft |
+| Body Size | Ø 37 mm × 60 mm |
+| Unit Cost | ≈ $14.95 |
 
 **Pros**
-- High torque output — suitable for heavier chassis  
-- Robust all-metal gearbox and bearings  
-- Compatible with **DRV8876 / DRV8251** drivers (3 – 4 A peak)  
-- Long service life under PWM control  
+- Compact all-metal gearbox  
+- Sufficient stall torque for light–medium mechanical loads  
+- Operates directly on 12 V, easy to drive with DRV887x H-bridges  
 
 **Cons**
-- Too powerful for **L293D** (will exceed current rating)  
-- Larger physical size and higher cost  
-- Needs stronger mounting and wiring  
+- Rated torque slightly below the 2 lb-lid requirement (stall torque barely sufficient)  
+- Not self-locking – lid may back-drive without brake or spring assist  
+- Continuous duty torque may overheat under heavy load  
+
+---
+
+### 2) **ISL Products MOT-KM-NJSC-12-A – 5 V, 106 RPM**
+<img width="200" height="200" alt="Image" src="https://github.com/user-attachments/assets/25be54c0-38a7-4d61-a732-7a865e7240a5" />
+
+**Link:** [Digi-Key Product Page](https://www.digikey.com/en/products/detail/isl-products-international/MOT-KM-NJSC-12-A/15283282)
+
+| Spec | Value |
+|------|-------|
+| Rated Voltage | 5 V DC |
+| No-Load Speed | ~106 RPM |
+| Rated Torque | 3.47 oz-in (≈ 0.025 N·m) |
+| Max (Momentary) Torque | 8.99 oz-in (≈ 0.064 N·m) |
+| Shaft | 3 mm round |
+| Body Size | Ø 12 mm × 25 mm |
+| Gear Type | Spur gear |
+| Unit Cost | ≈ $305.46 |
+
+**Pros**
+- Miniature, lightweight  
+- Low-voltage operation (5 V logic-level friendly)  
+
+**Cons**
+- **Extremely low torque** — over 100× weaker than required  
+- Not suitable for lifting or high-load mechanisms  
+- High cost for its performance  
 
 ---
 
 ## Choice
 
 | Use Case | Recommended Motor | Compatible Driver |
-|-----------|-------------------|-------------------|
-| Low-power, educational prototype | **Pololu N20 6 V (200 RPM)** | L293D |
-| Higher-power or production build | **Pololu 37D 12 V (100 RPM)** | DRV8876 / DRV8251 |
-
-**If using L293D:** Stay below 0.6 A stall — the N20 motor is ideal.  
-**If upgrading driver:** Use the 37D motor for more torque and load capacity.
+|-----------|------------------|-------------------|
+| Prototype / Low torque demo | DFRobot FIT0492-A | DRV8876 / DRV8251 |
+| Full-scale lid actuator (~2 lb lid) | Higher-torque 12 V worm-gear motor (≥ 400 oz-in, 10–30 rpm) | DRV8876 / DRV8251 |
 
 ---
 
 ## Rationale
-
-Both motors meet the system’s bidirectional drive requirement but serve different scales:
-
-- The **6 V N20** is efficient and matches the current limits of the **L293D**, making it perfect for small prototypes or lightweight autonomous systems.  
-- The **12 V 37D** pairs naturally with **modern MOSFET H-bridge drivers (DRV8876/DRV8251)**, providing several times more torque and mechanical robustness for larger builds.  
-
-Selecting between them depends on driver capability, chassis mass, and desired acceleration.
-
----
+- The **FIT0492-A** offers moderate torque and simplicity but lacks self-locking and continuous duty capacity.  
+- The **MOT-KM-NJSC-12-A** is far too small for the load requirement.  
+- A **12 V worm-gear drive** around **400–700 oz-in torque** remains the practical choice for a 2 lb lid.
