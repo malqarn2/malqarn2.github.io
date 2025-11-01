@@ -3,7 +3,7 @@ title: Individal Block Diagram
 ---
 
 ## Overview
-This block diagram illustrates how the AutoCan motor control system operates using a Microchip PIC18F57Q43 Curiosity Nano board. The system controls a 6V N20 DC motor through a custom-built H-Bridge (Q1–Q4) made of PMOS and NMOS transistors, enabling bidirectional motor rotation.
+This block diagram illustrates how the AutoCan motor control system operates using a Microchip PIC18F57Q43 Curiosity Nano board. The system controls a 6V N20 DC motor through a custom-built H-Bridge made of FAN8100, enabling bidirectional motor rotation.
 
 An op-amp (MCP6004) is used to buffer and condition the analog signal from the motor feedback before it is read by the microcontroller’s ADC input. The Curiosity Nano processes these analog readings and generates PWM control signals through its DAC and digital I/O pins to drive the H-Bridge.
 
@@ -14,4 +14,4 @@ To get some initial formatting help, one can view ["here"](https://embedded-syst
 ##  Block Diagram 
 
 
-<img width="712" height="550" alt="Image" src="https://github.com/user-attachments/assets/02ec911f-3322-4cd0-b4cb-be9a0064e780" />
+<img width="680" height="558" alt="Image" src="https://github.com/user-attachments/assets/368d2f8e-b641-40c7-9ca5-02f3477d16d7" />
