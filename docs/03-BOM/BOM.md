@@ -13,6 +13,6 @@ The Bill of Materials (BOM) lists standard, easily available components from Dig
 
 
 ## Bill of Materials Example (as Image)
-<img width="2052" height="183" alt="Image" src="https://github.com/user-attachments/assets/7f4cc8cb-e589-4409-8e23-fa088bfced5c" />
+<img width="1871" height="200" alt="Image" src="https://github.com/user-attachments/assets/30333f00-5190-4eec-bb20-db1ec5d2948e" />
 **Figure 1:** Bill of Materials as a screenshot.
 
