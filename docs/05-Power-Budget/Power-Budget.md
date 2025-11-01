@@ -9,11 +9,10 @@ By estimating the current draw of each device and grouping them by voltage rail 
 
 
 
-<img width="927" height="350" alt="Image" src="https://github.com/user-attachments/assets/7d0cce77-f12c-4561-802b-c8b6ae4603e4" />{style width:"350" height:"300;"}
+<img width="1413" height="763" alt="Image" src="https://github.com/user-attachments/assets/ee27392d-322a-4ff4-b900-b5802d43ec66" />
+<img width="1393" height="712" alt="Image" src="https://github.com/user-attachments/assets/2d2d029f-1f79-437d-bd33-8cbd562ad094" />{style width:"350" height:"300;"}
 
-<img width="926" height="325" alt="Image" src="https://github.com/user-attachments/assets/9eb86f18-5115-4a21-8cd6-31e86323e0da" />{style width:"350" height:"300;"}
 
-<img width="942" height="359" alt="Image" src="https://github.com/user-attachments/assets/fba33876-7a4b-4272-aa31-c2f0859e8fbf" />{style width:"350" height:"300;"}
 
 ## Conclusions
 
