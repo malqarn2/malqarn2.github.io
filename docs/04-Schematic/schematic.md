@@ -18,7 +18,7 @@ The LM324 buffers and stabilizes analog signals from sensors before they are rea
 
 Motor Driver (H-Bridge)
 
-A discrete H-Bridge made from PMOS and NMOS transistors drives the DC motor in both directions. The Curiosity Nano provides the control signals.
+A discrete H-Bridge  drives the DC motor in both directions. The Curiosity Nano provides the control signals.
 
 Controller (Curiosity Nano)
 
