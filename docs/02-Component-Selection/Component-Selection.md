@@ -1,89 +1,92 @@
-# title
-Component Selection – DC Motor
+# Component Selection – Speaker
 
-# DC Motor Subsystem
+## Speaker Subsystem
 
-Provide the mechanical output source for the AutoCan system by selecting a brushed DC gearmotor compatible with the chosen H-bridge driver and system voltage.
-
----
-
-## Requirements
-- **Operating voltage:** 6 – 12 V (nominal 12 V)
-- **Continuous current:** ≤ 3 A (DRV8876 class driver)
-- **Peak current:** ≤ 4 A (DRV8251/DRV8876)
-- **Direction control:** bidirectional (H-bridge)
-- **Torque and speed:** sufficient to open a ~2 lb trash-lid (~400 oz-in torque, 10–30 rpm)
-- **Mounting:** geared output shaft or worm-gear drive recommended
+Provide the audible output source for the AutoCan system by selecting a miniature 8 Ω speaker compatible with the transistor amplifier and 5 V logic-level drive from the PIC18F57Q43.
 
 ---
 
-## Options
+### Requirements
 
-### 1) **DFRobot FIT0492-A Micro DC Gearmotor – 12 V, 50 RPM**
-![Image](https://github.com/user-attachments/assets/1115248f-c77d-4318-84ff-1bb2fac5dd24)
+- **Operating voltage:** 5 V amplifier supply  
+- **Speaker impedance:** 8 Ω (compatible with simple class-AB amplifier)  
+- **Rated power:** 0.5 – 1 W  
+- **Frequency range:** 500 Hz – 5 kHz (tone and alert signals)  
+- **Mounting:** panel-mounted or enclosure-integrated speaker  
+- **Driver circuit:** discrete push-pull amplifier (Q1 = 2N3904, Q2 = 2N3906) with DC-blocking capacitor  
 
-**Link:** [Digi-Key Product Page](https://www.digikey.com/en/products/detail/dfrobot/FIT0492-A/7087165)
+---
+
+### Options
+
+#### 1) FD3057 (Provided Kit Speaker) — 8 Ω, ~0.5 W
+
+**Spec (from kit / typical values):**
 
 | Spec | Value |
 |------|-------|
-| Rated Voltage | 12 V DC |
-| No-Load Speed | ~50 RPM |
-| Rated Torque | ~9 kg·cm (≈ 125 oz-in ≈ 0.88 N·m) |
-| Stall Torque | ~50 kg·cm (≈ 695 oz-in ≈ 4.8 N·m) |
-| Gear Ratio | 100 : 1 |
-| Shaft | 6 mm D-shaft |
-| Body Size | Ø 37 mm × 60 mm |
-| Unit Cost | ≈ $14.95 |
+| Impedance | 8 Ω |
+| Rated Power | 0.5 W |
+| Max Power | 1.0 W |
+| Resonant Frequency | ~600 Hz |
+| SPL (0.5 W @ 0.1 m) | ~85 dB |
+| Dimensions | Ø36 mm × 10 mm |
+| Unit Cost | — (Included in kit) |
 
 **Pros**
-- Compact all-metal gearbox  
-- Sufficient stall torque for light–medium mechanical loads  
-- Operates directly on 12 V, easy to drive with DRV887x H-bridges  
+- Provided in lab kit  
+- Compact and easy to mount  
+- Works directly with 5 V transistor amplifier  
 
 **Cons**
-- Rated torque slightly below the 2 lb-lid requirement (stall torque barely sufficient)  
-- Not self-locking – lid may back-drive without brake or spring assist  
-- Continuous duty torque may overheat under heavy load  
+- Limited bass response  
+- No published datasheet values for exact tuning  
 
 ---
 
-### 2) **ISL Products MOT-KM-NJSC-12-A – 5 V, 106 RPM**
-<img width="200" height="200" alt="Image" src="https://github.com/user-attachments/assets/25be54c0-38a7-4d61-a732-7a865e7240a5" />
+#### 2) CUI Devices CDS-16098A — 8 Ω, 1 W Micro Speaker
+![Image](https://github.com/user-attachments/assets/c134d1e8-8bce-4b2f-993f-a5da47f0f7f8)
 
-**Link:** [Digi-Key Product Page](https://www.digikey.com/en/products/detail/isl-products-international/MOT-KM-NJSC-12-A/15283282)
+**[Link: Digi-Key Product Page](https://www.digikey.com/en/products/detail/cui-devices/CDS-16098A/)**  
 
 | Spec | Value |
 |------|-------|
-| Rated Voltage | 5 V DC |
-| No-Load Speed | ~106 RPM |
-| Rated Torque | 3.47 oz-in (≈ 0.025 N·m) |
-| Max (Momentary) Torque | 8.99 oz-in (≈ 0.064 N·m) |
-| Shaft | 3 mm round |
-| Body Size | Ø 12 mm × 25 mm |
-| Gear Type | Spur gear |
-| Unit Cost | ≈ $305.46 |
+| Rated / Max Power | 1.0 W / 1.0 W |
+| Impedance | 8 Ω (6.8 – 9.2 Ω @ 2 kHz) |
+| Resonant Frequency (Fo) | ~500 Hz |
+| SPL | 86 dB (0.5 W @ 0.1 m) |
+| Frequency Response | 500 Hz – 20 kHz |
+| Dimensions | 16 × 9 × 3 mm |
+| Weight | 1.4 g |
+| Unit Cost | ~$2.50 |
 
 **Pros**
-- Miniature, lightweight  
-- Low-voltage operation (5 V logic-level friendly)  
+- Small footprint, easy to embed  
+- Known SPL and frequency range  
+- 1 W rating suits 5 V amplifier outputs  
 
 **Cons**
-- **Extremely low torque** — over 100× weaker than required  
-- Not suitable for lifting or high-load mechanisms  
-- High cost for its performance  
+- Low bass output  
+- Requires acoustic cavity for loudness boost  
 
 ---
 
-## Choice
+### Choice
 
-| Use Case | Recommended Motor | Compatible Driver |
-|-----------|------------------|-------------------|
-| Prototype / Low torque demo | DFRobot FIT0492-A | DRV8876 / DRV8251 |
-| Full-scale lid actuator (~2 lb lid) | Higher-torque 12 V worm-gear motor (≥ 400 oz-in, 10–30 rpm) | DRV8876 / DRV8251 |
+| Use Case | Recommended Speaker | Compatible Driver |
+|-----------|---------------------|-------------------|
+| Prototype / Low-volume demo | **FD3057 (Kit)** | Discrete push-pull (2N3904/2N3906) |
+| Compact enclosure / improved fidelity | **CDS-16098A (CUI)** | Same discrete push-pull amplifier |
 
 ---
 
-## Rationale
-- The **FIT0492-A** offers moderate torque and simplicity but lacks self-locking and continuous duty capacity.  
-- The **MOT-KM-NJSC-12-A** is far too small for the load requirement.  
-- A **12 V worm-gear drive** around **400–700 oz-in torque** remains the practical choice for a 2 lb lid.
+### Rationale
+
+- Both speakers meet the **8 Ω, ≤ 1 W** requirement for the existing amplifier circuit.  
+- The **FD3057** is ideal for initial lab builds since it’s already included.  
+- The **CDS-16098A** is well-documented and easier to spec for enclosures or final designs.  
+- The 5 V amplifier provides enough swing to drive 0.5–1 W into 8 Ω without clipping under moderate loads.  
+
+---
+
+
