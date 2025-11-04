@@ -4,15 +4,12 @@ title: Bill of Materials
 
 ## Overview
 This circuit provides power and signal connections for a Curiosity Nano microcontroller board.
-It includes a 5 V regulator (LM7805) to power the board and components, and an op-amp (LM324) to buffer a sensor input before it reaches the Nano’s analog input.
-
-the motor driver FIT0492-A, which drives the DC motor to open or close the lid.
-
-The Bill of Materials (BOM) lists standard, easily available components from Digi-Key, making the design practical and low-cost for prototyping or small-scale builds.
+It includes a 5 V linear regulator (LM7805) to supply stable voltage to the microcontroller and components.
+A two-transistor amplifier (2N3904 & 2N3906), biased by 1N4148 signal diodes, boosts the audio output before driving the FD3057 speaker included in the lab kit.
+The design also incorporates a 10 µF coupling capacitor to filter DC offset and protect the speaker.
 
 
-
-## Bill of Materials Example (as Image)
-<img width="1871" height="200" alt="Image" src="https://github.com/user-attachments/assets/30333f00-5190-4eec-bb20-db1ec5d2948e" />
+## Bill of Materials (as Image)
+<img width="1476" height="242" alt="Image" src="https://github.com/user-attachments/assets/7e2ae60b-f1b6-4c6d-a329-ed41bfcd8844" />
 **Figure 1:** Bill of Materials as a screenshot.
 
