@@ -19,14 +19,18 @@ for<br>
 * The purpose of this datasheet is to provide a detailed overview of the Smart Trash project, including its components, Block Diagram, and functionality. This document serves as a technical reference for understanding how each subsystem, electrical, and software works together to achieve automated lid control using sensor and motor integration.
 ### Project Summary
 
-* The part I’m working on is the DC motor system, which is responsible for controlling the lid mechanism of the smart trash bin. This motor is used to automatically open and close the lid based on sensor input, such as motion or proximity detection. When the sensor detects an object or a user’s hand near the lid, the control circuit sends a signal to the DC motor to rotate in one direction, lifting the lid. After a short delay, the motor reverses its direction to close the lid smoothly. The system is designed to improve hygiene and enhance convenience by allowing users to dispose of waste without physical contact.
+* The part I’m working on is the Speaker Subsystem, which is responsible for generating audio output for the AutoCan system. This subsystem uses a push-pull amplifier circuit built with 2N3904 (NPN) and 2N3906 (PNP) transistors to drive the FD3057 speaker. The amplifier receives its input from the Curiosity Nano’s DAC1 output, which produces analog signals such as tones or alerts.
+
+The amplified signal is then sent through a coupling capacitor to the speaker, allowing the system to play sound notifications—for example, to indicate when the bin is opening or closing. Powered by a 5 V regulator (LM7805) from a 9 V barrel supply, the circuit provides clean and reliable audio output.
+
+This subsystem enhances user interaction by adding audible feedback, improving accessibility and awareness during system operation.
 * Add context that ties into the link to your [team report.](https://embedded-systems-design.github.io/EGR304TeamTemplate/)
 
 
 ### My Contribution
 
-* My specific contribution focused on the DC Motor Control System, which manages the automatic lid mechanism. I designed and implemented the motor control circuit responsible for opening and closing the lid when triggered by the sensor. The system uses a DC motor driven by a motor driver and microcontroller, allowing precise movement and timing. I also ensured the motor operated smoothly and safely by integrating limit switches and power control logic to prevent over-rotation or mechanical strain.
-
+* My specific contribution focused on the Speaker Subsystem, which is responsible for generating audio feedback within the AutoCan system. I designed and implemented a push-pull transistor amplifier using 2N3904 (NPN) and 2N3906 (PNP) transistors to drive the FD3057 speaker. The circuit receives an analog audio signal from the Curiosity Nano’s DAC output, amplifies it, and outputs a clear tone through the speaker.
+  
 To review the details listed of the material used to construct the subsection, you can review it in the ["BOM"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/03-BOM/BOM/) section of the datasheet.
 
 For all the sections
