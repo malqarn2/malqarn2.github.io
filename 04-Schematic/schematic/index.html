@@ -844,23 +844,25 @@
 
 <h2 id="overview">Overview</h2>
 <p>Overview</p>
-<p>This schematic powers and controls a Curiosity Nano microcontroller board with a DC motor. It includes a 9 V to 5 V power regulator, an op-amp for analog signal buffering, and a discrete H-Bridge for motor control.</p>
-<p>Power Supply</p>
-<p>A 9 V input is regulated to 5 V using an LM7805. The 5 V output powers the Curiosity Nano, the LM324 op-amp, and other components. Capacitors help smooth voltage and reduce noise.</p>
-<p>Op-Amp (LM324)</p>
-<p>The LM324 buffers and stabilizes analog signals from sensors before they are read by the Curiosity Nano’s analog input.</p>
-<p>Motor Driver (H-Bridge)</p>
-<p>A discrete H-Bridge  drives the DC motor in both directions. The Curiosity Nano provides the control signals.</p>
-<p>Controller (Curiosity Nano)</p>
-<p>The Curiosity Nano reads sensor signals, sends control signals to the H-Bridge, and manages overall system operation.</p>
-<p>Connector (J2)</p>
-<p>An 8-pin header provides access to the Curiosity Nano’s I/O pins for connecting sensors, modules, or external devices.</p>
-<p>Ground</p>
-<p>All components share a common ground to ensure stable and reliable operation.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://github.com/user-attachments/assets/83a5c6d2-9d32-486c-bdbe-2abc8e117684" data-desc-position="bottom"><img width="1181" height="817" alt="Image" src="https://github.com/user-attachments/assets/83a5c6d2-9d32-486c-bdbe-2abc8e117684"></a>
+<p>Overview
+This schematic powers a Curiosity Nano board and drives a speaker. It includes a 9 V to 5 V voltage regulator, a small audio amplifier, and connection headers for I/O.</p>
+<p>Power Supply
+A 9 V input is regulated to 5 V using an LM7805. The 5 V output powers the Curiosity Nano, the amplifier circuit, and other components. Capacitors smooth the voltage and reduce noise.</p>
+<p>Controller (Curiosity Nano)
+The Curiosity Nano microcontroller provides the control or audio signal (V_in) and manages overall operation. A 0.1 µF capacitor filters its power line for stability.</p>
+<p>Speaker Amplifier
+Two 2N3904 transistors form a simple push-pull amplifier to drive a speaker.
+Diodes 1N4148 bias the transistors, while resistors set the input and base currents.
+A 10 µF capacitor couples the signal to the speaker and blocks DC.</p>
+<p>Connectors</p>
+<p>J1: Barrel jack for 9 V input.</p>
+<p>J2: 8-pin header for Curiosity Nano I/O connections.</p>
+<p>Ground
+All sections share a common ground to ensure reliable and stable operation.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://github.com/user-attachments/assets/569f7fbf-34fa-4ecc-a528-9c2b35f6c0f9" data-desc-position="bottom"><img width="1698" height="831" alt="Image" src="https://github.com/user-attachments/assets/569f7fbf-34fa-4ecc-a528-9c2b35f6c0f9"></a>
 <strong>Figure 1:</strong> Showing a schematic.</p>
 <h2 id="resouces">Resouces</h2>
-<p>The schematic as a PDF download is available [<em>here</em>]<a href="https://github.com/user-attachments/files/23200744/Schematic.PDF.pdf">Schematic PDF.pdf</a>, and the Zip folder of the project [<em>here</em>]<a href="https://github.com/user-attachments/files/23200748/schematic.Zip.zip">schematic.Zip.zip</a>.</p>
+<p>The schematic as a PDF download is available [<em>here</em>]<a href="https://github.com/user-attachments/files/23409316/Speaker_schematic.pdf">Speaker_schematic.pdf</a>, and the Zip folder of the project [<em>here</em>]<a href="https://github.com/user-attachments/files/23409460/Speaker_schematic.zip">Speaker_schematic.zip</a>.</p>
 
 
 
