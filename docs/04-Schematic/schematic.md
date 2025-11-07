@@ -6,36 +6,33 @@ title: Schematic
 
 Overview
 
-This schematic powers and controls a Curiosity Nano microcontroller board with a DC motor. It includes a 9 V to 5 V power regulator, an op-amp for analog signal buffering, and a discrete H-Bridge for motor control.
+Overview
+This schematic powers a Curiosity Nano board and drives a speaker. It includes a 9 V to 5 V voltage regulator, a small audio amplifier, and connection headers for I/O.
 
 Power Supply
-
-A 9 V input is regulated to 5 V using an LM7805. The 5 V output powers the Curiosity Nano, the LM324 op-amp, and other components. Capacitors help smooth voltage and reduce noise.
-
-Op-Amp (LM324)
-
-The LM324 buffers and stabilizes analog signals from sensors before they are read by the Curiosity Nano’s analog input.
-
-Motor Driver (H-Bridge)
-
-A discrete H-Bridge  drives the DC motor in both directions. The Curiosity Nano provides the control signals.
+A 9 V input is regulated to 5 V using an LM7805. The 5 V output powers the Curiosity Nano, the amplifier circuit, and other components. Capacitors smooth the voltage and reduce noise.
 
 Controller (Curiosity Nano)
+The Curiosity Nano microcontroller provides the control or audio signal (V_in) and manages overall operation. A 0.1 µF capacitor filters its power line for stability.
 
-The Curiosity Nano reads sensor signals, sends control signals to the H-Bridge, and manages overall system operation.
+Speaker Amplifier
+Two 2N3904 transistors form a simple push-pull amplifier to drive a speaker.
+Diodes 1N4148 bias the transistors, while resistors set the input and base currents.
+A 10 µF capacitor couples the signal to the speaker and blocks DC.
 
-Connector (J2)
+Connectors
 
-An 8-pin header provides access to the Curiosity Nano’s I/O pins for connecting sensors, modules, or external devices.
+J1: Barrel jack for 9 V input.
+
+J2: 8-pin header for Curiosity Nano I/O connections.
 
 Ground
+All sections share a common ground to ensure reliable and stable operation.
 
-All components share a common ground to ensure stable and reliable operation.
-
-<img width="1181" height="817" alt="Image" src="https://github.com/user-attachments/assets/83a5c6d2-9d32-486c-bdbe-2abc8e117684" />
+<img width="1698" height="831" alt="Image" src="https://github.com/user-attachments/assets/569f7fbf-34fa-4ecc-a528-9c2b35f6c0f9" />
 **Figure 1:** Showing a schematic.
 
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*][Schematic PDF.pdf](https://github.com/user-attachments/files/23200744/Schematic.PDF.pdf), and the Zip folder of the project [*here*][schematic.Zip.zip](https://github.com/user-attachments/files/23200748/schematic.Zip.zip).
+The schematic as a PDF download is available [*here*][Speaker_schematic.pdf](https://github.com/user-attachments/files/23409316/Speaker_schematic.pdf), and the Zip folder of the project [*here*][Speaker_schematic.zip](https://github.com/user-attachments/files/23409460/Speaker_schematic.zip).
