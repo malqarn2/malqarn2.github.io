@@ -29,7 +29,7 @@ J2: 8-pin header for Curiosity Nano I/O connections.
 Ground
 All sections share a common ground to ensure reliable and stable operation.
 
-<img width="1505" height="759" alt="Image" src="https://github.com/user-attachments/assets/46b600d0-4b77-4568-a33d-84655e33f97d" />
+<img width="1711" height="817" alt="Image" src="https://github.com/user-attachments/assets/b8e64944-4445-41ad-b50a-493d4f0bc09d" />
 **Figure 1:** Showing a schematic.
 
 
