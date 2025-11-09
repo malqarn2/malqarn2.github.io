@@ -15,3 +15,5 @@ The blue area is the ground plane, and red tracks carry the signals and 5 V powe
 front''
 <img width="1632" height="872" alt="Image" src="https://github.com/user-attachments/assets/287332fa-1704-41c1-a61f-0648760dca8a" />
 back''
+
+the PCB PDF [PCB_PDF_F_B.pdf](https://github.com/user-attachments/files/23435795/PCB_PDF_F_B.pdf), and the PCB zip file [PCB.zip.zip](https://github.com/user-attachments/files/23435809/PCB.zip.zip)
