@@ -10,6 +10,6 @@ The design also incorporates a 10 µF coupling capacitor to filter DC offset and
 
 
 ## Bill of Materials (as Image)
-<img width="1476" height="242" alt="Image" src="https://github.com/user-attachments/assets/7e2ae60b-f1b6-4c6d-a329-ed41bfcd8844" />
+<img width="1830" height="359" alt="Image" src="https://github.com/user-attachments/assets/ebc425b0-46de-4c2f-971d-0d1eb1de840a" />
 **Figure 1:** Bill of Materials as a screenshot.
 
