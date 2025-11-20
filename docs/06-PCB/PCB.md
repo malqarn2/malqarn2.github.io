@@ -1,6 +1,6 @@
 ## Overview
 
-The barrel jack takes 9 V power and passes it through a 150 mA fuse.
+The barrel jack takes 9 V power and passes it through a 500 mA fuse.
 
 The LM7805 voltage regulator changes 9 V to 5 V for the rest of the circuit.
 
