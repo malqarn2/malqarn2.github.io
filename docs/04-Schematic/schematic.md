@@ -35,4 +35,4 @@ All sections share a common ground to ensure reliable and stable operation.
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*][Speaker_schematic.pdf](https://github.com/user-attachments/files/23409316/Speaker_schematic.pdf), and the Zip folder of the project [*here*][Speaker_schematic.zip](https://github.com/user-attachments/files/23409460/Speaker_schematic.zip).
+The schematic as a PDF download is available [*here*][Speaker_schematic.pdf](https://github.com/user-attachments/files/23639906/Speaker_schematic.pdf), and the Zip folder of the project [*here*][Speaker.zip](https://github.com/user-attachments/files/23639911/Speaker.zip).
