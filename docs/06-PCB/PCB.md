@@ -11,9 +11,9 @@ A push button and LED are used for user input and indication.
 The speaker circuit uses two transistors (2N3904 + 2N3906) and some resistors, diodes, and a capacitor to drive the speaker.
 
 The blue area is the ground plane, and red tracks carry the signals and 5 V power.
-<img width="1222" height="680" alt="Image" src="https://github.com/user-attachments/assets/9bb40fb3-14a2-4939-88c8-607e59b87e2e" />
+<img width="1513" height="781" alt="Image" src="https://github.com/user-attachments/assets/f536081d-8509-413a-ba35-c1af24b551cf" />
 front''
-<img width="1446" height="750" alt="Image" src="https://github.com/user-attachments/assets/6ff36d1b-423a-4927-a171-e8137145ea16" />
+<img width="1429" height="784" alt="Image" src="https://github.com/user-attachments/assets/0a5dbc2b-f133-4cb6-aa5a-67f8be4ee0ec" />
 back''
 
-the PCB PDF [PCB pdf.pdf](https://github.com/user-attachments/files/23640085/PCB.pdf.pdf), and the PCB zip file [Gerber.zip](https://github.com/user-attachments/files/23640088/Gerber.zip)
+the PCB PDF [PCB Front pdf.pdf](https://github.com/user-attachments/files/23653200/PCB.Front.pdf.pdf), and the PCB zip file [Gerber (1).zip](https://github.com/user-attachments/files/23653211/Gerber.1.zip).
