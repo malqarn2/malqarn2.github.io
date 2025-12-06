@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#appendix" class="md-skip">
+        <a href="#appendix-supporting-calculations" class="md-skip">
           Skip to content
         </a>
       
@@ -851,6 +851,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Appendix - Another Subfile
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -860,6 +871,76 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-power-budget-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      A. Power Budget Summary
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A. Power Budget Summary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5v-power-rail" class="md-nav__link">
+    <span class="md-ellipsis">
+      5V Power Rail
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external-supply" class="md-nav__link">
+    <span class="md-ellipsis">
+      External Supply
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b-regulator-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      B. Regulator Verification
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c-design-assumptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      C. Design Assumptions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -956,6 +1037,65 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-power-budget-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      A. Power Budget Summary
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A. Power Budget Summary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5v-power-rail" class="md-nav__link">
+    <span class="md-ellipsis">
+      5V Power Rail
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external-supply" class="md-nav__link">
+    <span class="md-ellipsis">
+      External Supply
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b-regulator-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      B. Regulator Verification
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c-design-assumptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      C. Design Assumptions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -977,9 +1117,80 @@
   
 
 
-<h1 id="appendix">Appendix</h1>
-<p>This appendix contains supporting technical material for the AutoCan Speaker project that does not belong in the main design sections. The following subfiles include calculation details, examples, charts, and controller reference tables used for verification and documentation.</p>
-<p>Use the navigation panel to access each appendix subfile.</p>
+<h1 id="appendix-supporting-calculations">Appendix – Supporting Calculations</h1>
+<h2 id="a-power-budget-summary">A. Power Budget Summary</h2>
+<h3 id="5v-power-rail">5V Power Rail</h3>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Max Current (mA)</th>
+<th>Voltage (V)</th>
+<th>Power (mW)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PIC18F57Q43 Curiosity Nano</td>
+<td>120</td>
+<td>5</td>
+<td>600</td>
+</tr>
+<tr>
+<td>Push-Pull Amplifier (2N3904/2N3906)</td>
+<td>200</td>
+<td>5</td>
+<td>1000</td>
+</tr>
+<tr>
+<td>Status LED + Resistor</td>
+<td>15</td>
+<td>5</td>
+<td>75</td>
+</tr>
+<tr>
+<td>Subtotal</td>
+<td><strong>335 mA</strong></td>
+<td></td>
+<td><strong>1675 mW</strong></td>
+</tr>
+<tr>
+<td>Safety Margin (25%)</td>
+<td><strong>83.75 mA</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Total Required</strong></td>
+<td><strong>418.75 mA</strong></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="external-supply">External Supply</h3>
+<ul>
+<li>Wall Adapter: <strong>9V, 800 mA</strong></li>
+<li>Required Current: <strong>418.75 mA</strong></li>
+<li>Remaining Capacity: <strong>381 mA</strong></li>
+</ul>
+<p>✅ Supply is sufficient.</p>
+<hr>
+<h2 id="b-regulator-verification">B. Regulator Verification</h2>
+<ul>
+<li>Regulator: <strong>LM7805</strong></li>
+<li>Rated Output: <strong>1A</strong></li>
+<li>Required Output: <strong>418.75 mA</strong></li>
+</ul>
+<p>✅ Regulator operates safely within limits.</p>
+<hr>
+<h2 id="c-design-assumptions">C. Design Assumptions</h2>
+<ol>
+<li>Speaker is driven from a 5V AC-coupled amplifier.</li>
+<li>MCU maximum operating current is 120 mA.</li>
+<li>LED is limited to 15 mA with a 100Ω resistor.</li>
+<li>Safety margin of 25% is applied to all rails.</li>
+</ol>
 
 
 
