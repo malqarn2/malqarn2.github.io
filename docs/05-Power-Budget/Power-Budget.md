@@ -11,8 +11,8 @@ Creating this Power Budget helps ensure reliable operation, preventing voltage s
 
 
 
-<img width="1146" height="817" alt="Image" src="https://github.com/user-attachments/assets/2331ec2e-9c38-4747-befe-21d06a575350" />
-<img width="1221" height="468" alt="Image" src="https://github.com/user-attachments/assets/c04b6928-02e9-4a92-95d6-eadd4df15747" />{style width:"350" height:"300;"}
+<img width="830" height="675" alt="Image" src="https://github.com/user-attachments/assets/078b7b16-b45f-4dfd-b04f-83f939d96a54" />
+<img width="868" height="334" alt="Image" src="https://github.com/user-attachments/assets/0fc95103-da48-433c-87f8-79552af4ed2e" />{style width:"350" height:"300;"}
 
 
 
@@ -24,4 +24,4 @@ Overall, the Power Budget validates that this updated speaker-based design is el
 
 ## Resouces
 
-The power budget as a PDF download is available [*here*][Power_Budget_Speaker.pdf](https://github.com/user-attachments/files/23348479/Power_Budget_Speaker.pdf), and a Microsoft Excel Sheet [*here*][Power_Budget_Speaker.xlsx](https://github.com/user-attachments/files/23348486/Power_Budget_Speaker.xlsx).
+The power budget as a PDF download is available [*here*][Power_Budget_final_speaker.pdf](https://github.com/user-attachments/files/23973373/Power_Budget_final_speaker.pdf), and a Microsoft Excel Sheet [*here*][Power_Budget_Speaker_final.xlsx](https://github.com/user-attachments/files/23973374/Power_Budget_Speaker_final.xlsx).
