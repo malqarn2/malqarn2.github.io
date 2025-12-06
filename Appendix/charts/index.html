@@ -26,7 +26,7 @@
 
     
       
-        <title>Appendix - Charts Example - EGR 304 Data Sheet Template</title>
+        <title>Appendix - Charts - EGR 304 Data Sheet Template</title>
       
     
     
@@ -89,6 +89,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#system-flow-chart-speaker-operation" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -120,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Appendix - Charts Example
+              Appendix - Charts
             
           </span>
         </div>
@@ -886,15 +891,52 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Appendix - Charts
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Appendix - Charts Example
+    Appendix - Charts
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#system-flow-chart-speaker-operation" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Flow Chart (Speaker Operation)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -947,6 +989,23 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#system-flow-chart-speaker-operation" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Flow Chart (Speaker Operation)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -968,35 +1027,41 @@
   
 
 
-  <h1>Appendix - Charts Example</h1>
+  <h1>Appendix - Charts</h1>
 
+<h2 id="system-flow-chart-speaker-operation">System Flow Chart (Speaker Operation)</h2>
 <pre class="mermaid"><code>graph LR
-  A[Start] --&gt; B{Error?};
-  B --&gt;|Yes| C[Hmm...];
-  C --&gt; D[Debug];
-  D --&gt; B;
-  B ----&gt;|No| E[Yay!];</code></pre>
+    A[Power Applied] --&gt; B[LM7805 Regulates 9V to 5V]
+    B --&gt; C[PIC18F57Q43 Boots]
+    C --&gt; D[DAC Generates Audio Signal]
+    D --&gt; E[Push-Pull Amplifier]
+    E --&gt; F[Speaker Output]
+    C --&gt; G[PWM Controls Status LED]
+</code></pre>
 <pre class="mermaid"><code>sequenceDiagram
-  autonumber
-  Alice-&gt;&gt;John: Hello John, how are you?
-  loop Healthcheck
-      John-&gt;&gt;John: Fight against hypochondria
-  end
-  Note right of John: Rational thoughts!
-  John--&gt;&gt;Alice: Great!
-  John-&gt;&gt;Bob: How about you?
-  Bob--&gt;&gt;John: Jolly good!</code></pre>
-<pre class="mermaid"><code>stateDiagram-v2
-  state fork_state &lt;&lt;fork&gt;&gt;
-    [*] --&gt; fork_state
-    fork_state --&gt; State2
-    fork_state --&gt; State3
-
-    state join_state &lt;&lt;join&gt;&gt;
-    State2 --&gt; join_state
-    State3 --&gt; join_state
-    join_state --&gt; State4
-    State4 --&gt; [*]</code></pre>
+    autonumber
+    User-&gt;&gt;Button: Press
+    Button-&gt;&gt;PIC18F57Q43: Digital Input (RD1)
+    PIC18F57Q43-&gt;&gt;DAC: Generate Audio Waveform
+    DAC-&gt;&gt;Amplifier: Analog Signal
+    Amplifier-&gt;&gt;Speaker: Output Sound
+    PIC18F57Q43-&gt;&gt;LED: PWM Signal (RB3)
+</code></pre>
+<p></p><pre class="mermaid"><code>stateDiagram-v2
+    [*] --&gt; Idle
+    Idle --&gt; Active: Button Press
+    Active --&gt; PlayingTone: DAC Enabled
+    PlayingTone --&gt; Active: Tone Complete
+    Active --&gt; Idle: Timeout
+</code></pre>
+<pre class="mermaid"><code>graph TD
+    A[9V Wall Adapter] --&gt; B[Fuse]
+    B --&gt; C[LM7805 Regulator]
+    C --&gt; D[5V Power Rail]
+    D --&gt; E[PIC18F57Q43 MCU]
+    D --&gt; F[Audio Amplifier]
+    D --&gt; G[Status LED]
+    F --&gt; H[Speaker]</code></pre><p></p>
 
 
 
