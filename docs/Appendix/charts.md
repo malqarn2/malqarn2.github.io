@@ -1,41 +1,49 @@
 ---
-title: Appendix - Charts Example
+title: Appendix - Charts 
 ---
 
+## System Flow Chart (Speaker Operation)
 
-``` mermaid
+```mermaid
 graph LR
-  A[Start] --> B{Error?};
-  B -->|Yes| C[Hmm...];
-  C --> D[Debug];
-  D --> B;
-  B ---->|No| E[Yay!];
+    A[Power Applied] --> B[LM7805 Regulates 9V to 5V]
+    B --> C[PIC18F57Q43 Boots]
+    C --> D[DAC Generates Audio Signal]
+    D --> E[Push-Pull Amplifier]
+    E --> F[Speaker Output]
+    C --> G[PWM Controls Status LED]
+
 ```
 
 ``` mermaid
 sequenceDiagram
-  autonumber
-  Alice->>John: Hello John, how are you?
-  loop Healthcheck
-      John->>John: Fight against hypochondria
-  end
-  Note right of John: Rational thoughts!
-  John-->>Alice: Great!
-  John->>Bob: How about you?
-  Bob-->>John: Jolly good!
+    autonumber
+    User->>Button: Press
+    Button->>PIC18F57Q43: Digital Input (RD1)
+    PIC18F57Q43->>DAC: Generate Audio Waveform
+    DAC->>Amplifier: Analog Signal
+    Amplifier->>Speaker: Output Sound
+    PIC18F57Q43->>LED: PWM Signal (RB3)
+
 ```
 
 
 ``` mermaid
 stateDiagram-v2
-  state fork_state <<fork>>
-    [*] --> fork_state
-    fork_state --> State2
-    fork_state --> State3
+    [*] --> Idle
+    Idle --> Active: Button Press
+    Active --> PlayingTone: DAC Enabled
+    PlayingTone --> Active: Tone Complete
+    Active --> Idle: Timeout
 
-    state join_state <<join>>
-    State2 --> join_state
-    State3 --> join_state
-    join_state --> State4
-    State4 --> [*]
+```
+``` mermaid
+graph TD
+    A[9V Wall Adapter] --> B[Fuse]
+    B --> C[LM7805 Regulator]
+    C --> D[5V Power Rail]
+    D --> E[PIC18F57Q43 MCU]
+    D --> F[Audio Amplifier]
+    D --> G[Status LED]
+    F --> H[Speaker]
 ```
