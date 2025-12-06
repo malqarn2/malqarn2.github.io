@@ -16,7 +16,7 @@ for<br>
 
 ## Introduction
 
-* The purpose of this datasheet is to provide a detailed overview of the Smart Trash project, including its components, Block Diagram, and functionality. This document serves as a technical reference for understanding how each subsystem, electrical, and software works together to achieve automated lid control using sensor and motor integration.
+* The purpose of this datasheet is to provide a detailed overview of the Smart Trash project, including its components, Block Diagram, and functionality. This document serves as a technical reference for understanding how each subsystem, electrical, and software works together to achieve automated Speaker integration.
 ### Project Summary
 
 * The part I’m working on is the Speaker Subsystem, which is responsible for generating audio output for the AutoCan system. This subsystem uses a push-pull amplifier circuit built with 2N3904 (NPN) and 2N3906 (PNP) transistors to drive the FD3057 speaker. The amplifier receives its input from the Curiosity Nano’s DAC1 output, which produces analog signals such as tones or alerts.
