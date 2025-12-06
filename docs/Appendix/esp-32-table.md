@@ -32,4 +32,4 @@ title: Appendix – Example Controller Table for the PIC18F57Q43
 | DAC | 2 | 1 | RA0 |
 
 
-\* The ESP32-S2 has multiple SPI interfaces, but some are for internal use
+
