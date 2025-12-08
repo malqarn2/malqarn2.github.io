@@ -4,9 +4,7 @@ title: Schematic
 
 ## Overview
 
-Overview
 
-Overview
 This schematic powers a Curiosity Nano board and drives a speaker. It includes a 9 V to 5 V voltage regulator, a small audio amplifier, and connection headers for I/O.
 
 Power Supply
