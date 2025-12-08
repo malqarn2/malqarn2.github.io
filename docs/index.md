@@ -24,8 +24,7 @@ for<br>
 The amplified signal is then sent through a coupling capacitor to the speaker, allowing the system to play sound notifications—for example, to indicate when the bin is opening or closing. Powered by a 5 V regulator (LM7805) from a 9 V barrel supply, the circuit provides clean and reliable audio output.
 
 This subsystem enhances user interaction by adding audible feedback, improving accessibility and awareness during system operation.
-* Add context that ties into the link to your [team report.](https://embedded-systems-design.github.io/EGR304TeamTemplate/)
-
+* Add context that ties into the link to your [team report.](https://egr304-2025-f-202.github.io/)
 
 ### My Contribution
 
