@@ -151,20 +151,19 @@ For the **current AutoCan lab build**, the **FD3057 kit speaker** is used becaus
 
 2. **Power handling**  
    - FD3057 handles roughly **0.5–1 W**, which is adequate for the short-duration tones used in AutoCan.  
-   - CDS-16098A and AS02808MR-R are specified for **0.7–1 W** and **1–1.5 W**, respectively, providing comfortable headroom when driven from the 5 V supply. :contentReference[oaicite:2]{index=2}  
-
+   - CDS-16098A and AS02808MR-R are specified for **0.7–1 W** and **1–1.5 W**, respectively, providing comfortable headroom when driven from the 5 V supply. 
 3. **Frequency response / audibility**  
-   The CDS-16098A and AS02808MR-R both cover approximately **500 Hz–20 kHz**, so they easily span the 1–5 kHz range where human hearing is most sensitive. :contentReference[oaicite:3]{index=3}  
+   The CDS-16098A and AS02808MR-R both cover approximately **500 Hz–20 kHz**, so they easily span the 1–5 kHz range where human hearing is most sensitive.  
    The FD3057, while less well-documented, has been verified in the lab to produce clearly audible tones in this range.
 
 4. **Size and mechanical integration**  
    - FD3057 is physically larger but easy to mount on a simple panel or bracket and already matches the kit hardware.  
-   - CDS-16098A is ultra-compact (16 × 9 × 3 mm) and ideal for a tight enclosure, at the cost of more complex mounting. :contentReference[oaicite:4]{index=4}  
-   - AS02808MR-R offers an intermediate option: smaller than FD3057 but still round, making it straightforward to integrate in a future enclosure design. :contentReference[oaicite:5]{index=5}  
+   - CDS-16098A is ultra-compact (16 × 9 × 3 mm) and ideal for a tight enclosure, at the cost of more complex mounting. 
+   - AS02808MR-R offers an intermediate option: smaller than FD3057 but still round, making it straightforward to integrate in a future enclosure design. 
 
 5. **Cost and availability**  
    - FD3057 is effectively **free** for the project because it is included in the lab kit.  
-   - CDS-16098A and AS02808MR-R are both low-cost (~\$2–3), widely available parts from standard distributors, so they are realistic options for later iterations. :contentReference[oaicite:6]{index=6}  
+   - CDS-16098A and AS02808MR-R are both low-cost (~\$2–3), widely available parts from standard distributors, so they are realistic options for later iterations.
 
 6. **Final justification**  
    Given the current course constraints, the **FD3057 kit speaker** is selected as the primary component for the AutoCan design. It satisfies the electrical requirements (8 Ω, ≈0.5–1 W), is loud enough for alerts in a lab/vehicle environment, and requires no additional cost or PCB changes.  
