@@ -10,10 +10,12 @@ The DAC1 (RD5) pin outputs the analog audio signal to the amplifier, which boost
 Additional digital I/O pins (RD1, RD2, RD6) are available for testing or controlling other devices. A test button is connected for user input.
 An 8-pin connector provides access to analog, digital, and ground lines for external connections.
 
+We are using (RD1) for communication 
+
 
 
 
 ##  Block Diagram 
 
 
-<img width="751" height="756" alt="Image" src="https://github.com/user-attachments/assets/9f3333ec-02db-42ba-a6e2-d0b3a8d94f89" />
+<img width="751" height="756" alt="Image" src="https://github.com/user-attachments/assets/8309c55a-6d0d-451c-b050-758ab59c0652" />
