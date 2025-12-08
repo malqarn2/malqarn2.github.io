@@ -30,6 +30,6 @@ This subsystem enhances user interaction by adding audible feedback, improving a
 
 * My specific contribution focused on the Speaker Subsystem, which is responsible for generating audio feedback within the AutoCan system. I designed and implemented a push-pull transistor amplifier using 2N3904 (NPN) and 2N3906 (PNP) transistors to drive the FD3057 speaker. The circuit receives an analog audio signal from the Curiosity Nano’s DAC output, amplifies it, and outputs a clear tone through the speaker.
   
-To review the details listed of the material used to construct the subsection, you can review it in the ["BOM"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/03-BOM/BOM/) section of the datasheet.
+To review the details listed of the material used to construct the subsection, you can review it in the ["BOM"](https://malqarn2.github.io/03-BOM/BOM/) section of the datasheet.
 
 For all the sections
