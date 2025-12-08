@@ -10,6 +10,5 @@ The firmware is written using Microchip MPLAB X and XC8, following a modular str
 
 # example
 
-<img width="783" height="783" alt="Image" src="https://github.com/user-attachments/assets/d73e3479-aeb3-4095-9423-29af18239f83" />
-
+<img width="1917" height="1041" alt="Image" src="https://github.com/user-attachments/assets/86407049-aba5-47bb-9469-e7ebc7e3955d" />
 thats the [SpeakerFinal.zip](https://github.com/user-attachments/files/23918689/SpeakerFinal.zip)
